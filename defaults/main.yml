@@ -23,6 +23,12 @@ grafana_version: 13.0.2
 grafana_uid: ""
 grafana_gid: ""
 
+# Controls the user that the container runs as. Set to `0` to run as root.
+grafana_container_uid: "{{ grafana_uid }}"
+
+# Controls the group that the container runs as. Set to `0` to run as root.
+grafana_container_gid: "{{ grafana_gid }}"
+
 # The hostname at which Grafana is served.
 grafana_hostname: ""
 

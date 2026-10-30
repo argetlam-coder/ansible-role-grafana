@@ -24,7 +24,7 @@ ExecStartPre={{ devture_systemd_docker_base_host_command_docker }} create \
       --rm \
       --name={{ grafana_identifier }} \
       --log-driver=none \
-      --user={{ grafana_uid }}:{{ grafana_gid }} \
+      --user={{ grafana_container_uid }}:{{ grafana_container_gid }} \
       --cap-drop=ALL \
       --read-only \
       --network={{ grafana_container_network }} \
